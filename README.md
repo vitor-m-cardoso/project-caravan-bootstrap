@@ -2,7 +2,7 @@
 
 ## Habilidades desenvolvidas:
 
-- Manipular Bootstrap;
+- Manipular o Bootstrap;
 
 ## O que foi desenvolvido:
 
