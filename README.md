@@ -6,4 +6,4 @@
 
 ## O que foi desenvolvido:
 
-- Uma página web completa de uma empresa ficticia de viagens. Para isto foi utilizado HTML, CSS e Bootstrap.
+- Uma página Front-end completa de uma empresa ficticia de viagens. Para isto foi utilizado HTML, CSS e Bootstrap.
