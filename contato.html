@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caravan - Contato</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <!-- modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginTitulo">Faça login na sua conta.</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputLoginEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputLoginEmail">
+              </div>
+              <div class="mb-3">
+                <label for="inputPasswordLogin" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputPasswordLogin">
+              </div>
+              <div>
+                <button type="submit" class="btn btn-primary">Entrar na conta</button>
+              </div>
+              <small class="form-text">Esqueceu a senha? <a href="#">Clique aqui.</a></small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand">
+          <img src="./img/caravan.svg" alt="Caravan">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="local.html">California</a></li>
+                <li><a class="dropdown-item" href="local.html">Paris</a></li>
+                <li><a class="dropdown-item" href="local.html">Dublin</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="planos.html">Planos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-primary ms-md-2" href="inscricao.html">Inscreva-se</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- contact section -->
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">POSSUI ALGUMA DÚVIDA?</span>
+        <h1 class="display-4 text-primary">Fale Conosco</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg mb-5">
+          <form class="bg-light rounded p-4 box-shadow">
+            <div class="mb-3">
+              <label for="clientName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="clientName">
+            </div>
+            <div class="mb-3">
+              <label for="clientEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="clientEmail">
+            </div>
+            <div class="mb-3">
+              <label for="clientMessage">Mensagem</label>
+              <textarea id="clientMessage" rows="5" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+          </form>
+        </div>
+        <div class="col-lg">
+          <h2 class="h6">NOSSO ENDEREÇO</h2>
+          <a href="https://www.google.com/maps/place/Xaxim,+Curitiba+-+PR/@-25.506843,-49.2859738,14z/data=!3m1!4b1!4m5!3m4!1s0x94dcfb6c608b4aa5:0x96cabb9c9e3c23a3!8m2!3d-25.5064759!4d-49.2641495" target="_blank"><img class="img-fluid box-shadow rounded mb-4" src="/img/mapa.png" alt="endereco da empresa"></a>
+          <h2 class="h6">DADOS DE CONTATO</h2>
+          <ul class="list-unstyled text-secondary">
+            <li>contato@contato.com.br</li>
+            <li>41 99999-9999</li>
+            <li>De Seg. à Sex. das 8h às 18h</li>
+          </ul>
+          <h2 class="h6">REDES SOCIAIS</h2>
+          <ul class="list-unstyled" style="max-width: 260px">
+            <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://www.instagram.com/vitorcaardoso_/" target="_blank">Instragram</a></li>
+            <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://www.linkedin.com/in/vitormcardoso/" target="_blank">Linkedin</a></li>
+            <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://github.com/vitor-m-cardoso/" target="_blank">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end contact section -->
+
+    <!-- common questions section -->
+    <section class="container">
+      <div class="my-5 text-center">
+        <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+        <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 accordion" id="perguntasFrequentes">
+          <div class="pergunta py-2">
+            <a class="lead remove-decoration" data-bs-toggle="collapse" data-bs-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+              ➔ É possível cancelar a viagem?
+            </a>
+            <div id="pergunta1" class="accordion-collapse collapse show" aria-labelledby="pergunta1" data-bs-parent="#perguntasFrequentes">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="pergunta py-2">
+            <a class="lead remove-decoration" data-bs-toggle="collapse" data-bs-target="#pergunta2" aria-expanded="false" aria-controls="pergunta2">
+              ➔ Qual a garantia que tenho se perder o voo?
+            </a>
+            <div id="pergunta2" class="accordion-collapse collapse" aria-labelledby="pergunta2" data-bs-parent="#perguntasFrequentes">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="pergunta py-2">
+            <a class="lead remove-decoration" data-bs-toggle="collapse" data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">
+              ➔ Qual a principal forma de viagem?
+            </a>
+            <div id="pergunta3" class="accordion-collapse collapse" aria-labelledby="pergunta3" data-bs-parent="#perguntasFrequentes">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="pergunta py-2">
+            <a class="lead remove-decoration" data-bs-toggle="collapse" data-bs-target="#pergunta4" aria-expanded="false" aria-controls="pergunta4">
+              ➔ Qual o melhor destino de viagem?
+            </a>
+            <div id="pergunta4" class="accordion-collapse collapse" aria-labelledby="pergunta4" data-bs-parent="#perguntasFrequentes">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <div class="pergunta py-2">
+            <a class="lead remove-decoration" data-bs-toggle="collapse" data-bs-target="#pergunta5" aria-expanded="false" aria-controls="pergunta5">
+              ➔ Vocês dão descontos para grupos grandes?
+            </a>
+            <div id="pergunta5" class="accordion-collapse collapse" aria-labelledby="pergunta5" data-bs-parent="#perguntasFrequentes">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium lorem non vestibulum scelerisque. Proin a vestibulum sem, eget tristique massa. Aliquam lacinia rhoncus nibh quis ornare.</p>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end common questions section -->
+
+    <!-- footer section -->
+    <footer class="bg-dark text-white mt-5">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <h4 class="h6">PÁGINAS</h4>
+            <ul class="list-unstyled">
+              <li><a class="remove-decoration" href="planos.html">Planos</a></li>
+              <li><a class="remove-decoration" href="contato.html">Contato</a></li>
+              <li><a class="remove-decoration" href="inscricao.html">Inscreva-se</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <h4 class="h6">LOCAIS</h4>
+            <ul class="list-unstyled">
+              <li><a class="remove-decoration" href="local.html">California</a></li>
+              <li><a class="remove-decoration" href="local.html">Paris</a></li>
+              <li><a class="remove-decoration" href="local.html">Dublin</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="h6">DADOS DE CONTATO</h4>
+            <ul class="list-unstyled text-secondary">
+              <li>vitor.mauricioc@outlook.com</li>
+              <li>41 99686-9583</li>
+              <li>De Seg. à Sex. das 8h às 20h</li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h4 class="h6">REDES SOCIAIS</h4>
+            <ul class="list-unstyled">
+              <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://www.instagram.com/vitorcaardoso_/" target="_blank" style="max-width: 140px">Instragram</a></li>
+              <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://www.linkedin.com/in/vitormcardoso/" target="_blank" style="max-width: 140px">Linkedin</a></li>
+              <li><a class="btn btn-outline-secondary d-block mb-2 btn-sm" href="https://github.com/vitor-m-cardoso/" target="_blank" style="max-width: 140px">Github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary text-center py-3">
+        <p class="mb-0">Vitor Cardoso © 2021. Alguns direitos reservados.</p>
+      </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script type="text/javascript" src="./bootstrap-5.0.1-dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
